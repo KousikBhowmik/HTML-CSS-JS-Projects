@@ -6,6 +6,7 @@ const returnOne = document.querySelector(".opttion .more i");
 const opttionVis = document.querySelector(" body .opttion");
 const logoVis = document.querySelector(".delete .logo");
 const yesNOVis = document.querySelector(".delete .yes-no");
+const yesDel = document.querySelector(".delete .yes")
 
 button.addEventListener("click", (e) => {
   button.style.visibility = "hidden";
@@ -34,3 +35,10 @@ returnOne.addEventListener("click", () => {
   yesNOVis.style.visibility = "hidden";
   e.stopPropagation();
 });
+
+yesDel.addEventListener('click', () => {
+  button.style.visibility = "visible";
+  opttionVis.style.visibility = "hidden";
+  logoVis.style.visibility = "hidden";
+  yesNOVis.style.visibility = "hidden";
+})
