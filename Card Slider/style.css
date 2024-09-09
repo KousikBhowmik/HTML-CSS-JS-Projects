@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to left top, #031A9A, #8B53Ff);
+    min-height: 100vh;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.wrapper i{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23);
+}
+
+.wrapper i:first-child{
+    left: -22px;
+}
+
+.wrapper i:last-child{
+    right: -22px;
+}
+
+.carusel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px );
+    gap: 16px;
+    overflow: hidden;
+}
+
+.carusel :where(.card , .img){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carusel .card{
+    cursor: grab;
+    user-select: none;
+    height: 342px;
+    border-radius: 8px;
+    list-style: none;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+
+.card .img{
+    height: 148px;
+    width: 148px;
+    border-radius: 50%;
+    background: #8B53Ff;
+}
+
+.card .img img{
+    width:  140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+
+@media screen and (max-width: 900px){
+    .carusel{
+        grid-auto-columns: calc((100% / 2) - 9px );
+    }
+}
+@media screen and (max-width: 600px){
+    .carusel{
+        grid-auto-columns: 100%;
+    }
+}
