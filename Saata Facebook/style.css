@@ -43,4 +43,8 @@ nav .nav-right{
     cursor: pointer;
 
 }
+.search-box{
+    background: #efefef;
+    width: 350px;
+}
 
