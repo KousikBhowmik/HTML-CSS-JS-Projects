@@ -15,7 +15,9 @@ nav{
     justify-content: space-between;
     background: #1876f2;
     padding: 5px 5%;
-
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 nav .logo{
     width: 160px;
@@ -84,5 +86,132 @@ nav .nav-right{
     border: 0;
 }
 
+/* ************* Container CSS ******************* */
 
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5%;
+}
+
+.left-sidebar{
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    
+}
+.right-sidebar{
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    color: #626262;
+
+}
+
+.main-content{
+    flex-basis: 47%;
+}
+
+/* *********** left side CSS ************ */
+
+.imp-links a,
+.shortcut-links a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #626262;
+    width: fit-content;
+}
+.imp-links a:last-child{
+    color: #1876f2;
+}
+.imp-links a img{
+    width: 25px;
+    margin: 15px;
+}
+.imp-links{
+    border-bottom: 1px solid #ccc;
+
+}
+
+.shortcut-links a img{
+    width: 40px;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+.shortcut-links p{
+    margin: 25px 0;
+    color: #626262;
+    font-weight: 500;
+
+}
+
+
+/* *********** Right side CSS ************ */
+
+.sldebar-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+
+}
+.sldebar-title h4{
+    font-weight: 600;
+    font-size: 16px;
+
+}
+.sldebar-title a{
+    text-decoration: none;
+    color: #1876f2;
+    font-size: 12px;
+
+}
+
+.event{
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 20px;
+
+}
+
+.event p{
+    font-size: 12px;
+
+}
+.event a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #1876f2;
+}
+
+.left-event{
+    border-radius: 10px;
+    height: 65PX;
+    width: 65PX;
+    margin-right: 15PX;
+    padding-top: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-event span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #1876f2;
+    color: #fff;
+    font-size: 10px;
+    padding: 4px 0;
+}
 
