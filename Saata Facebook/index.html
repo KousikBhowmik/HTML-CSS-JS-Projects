@@ -28,13 +28,61 @@
           <img src="./images/search.png" alt="search_icon" />
           <input type="text" placeholder="Search here" />
         </div>
-        <div class="nav-user-icon online">
+        <div class="nav-user-icon online" onclick="settingsMenuToggle()">
           <img src="./images/profile-pic.png" alt="dp" />
         </div>
       </div>
 
-      
+      <!--------------- Settings menu -------------------->
 
+      <div class="settings-menu">
+
+        <div id="dark-btn">
+          <span></span>
+        </div>
+
+        <div class="setting-wrapper">
+          <div class="user-profile">
+            <img src="./images/profile-pic.png" />
+            <div>
+              <p>John Nicolson</p>
+              <a href="#">See your profile</a>
+            </div>
+          </div>
+          <hr />
+          <div class="user-profile">
+            <img src="./images/feedback.png" />
+            <div>
+              <p>Give Feedback</p>
+              <a href="#">Help us to create new design</a>
+            </div>
+          </div>
+          <hr />
+          <div class="setting-links">
+            <img class="setting-icon" src="./images/setting.png" />
+            <a href="#"
+              >Settings & Privacy <img src="./images/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img class="setting-icon" src="./images/help.png" />
+            <a href="#"
+              >Help & Support <img src="./images/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img class="setting-icon" src="./images/display.png" />
+            <a href="#"
+              >Display & Accessibility
+              <img src="./images/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img class="setting-icon" src="./images/logout.png" />
+            <a href="#">Logout <img src="./images/arrow.png" width="10px" /></a>
+          </div>
+        </div>
+      </div>
     </nav>
 
     <div class="container">
@@ -141,7 +189,6 @@
           </div>
         </div>
 
-
         <div class="post-container">
           <div class="post-row">
             <div class="user-profile">
@@ -175,7 +222,6 @@
             </div>
           </div>
         </div>
-
 
         <div class="post-container">
           <div class="post-row">
@@ -211,7 +257,6 @@
           </div>
         </div>
 
-
         <div class="post-container">
           <div class="post-row">
             <div class="user-profile">
@@ -245,7 +290,6 @@
             </div>
           </div>
         </div>
-
 
         <div class="post-container">
           <div class="post-row">
@@ -282,7 +326,6 @@
         </div>
 
         <button class="load-btn">Load More</button>
-
       </div>
       <!------------------Right Slidebar------------------>
       <div class="right-sidebar">
@@ -353,6 +396,6 @@
       <p>Copywrite 2021 - Sasta Facebook</p>
     </footer>
 
-    <script src="./script.js" defer></script>
+    <script src="./script.js"></script>
   </body>
 </html>
