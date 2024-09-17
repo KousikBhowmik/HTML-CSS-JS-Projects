@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Kousik Bhowmik</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+  </head>
+  <body class="overflow-x-">
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
+      <img class="w-full" src="./images/header-bg-color.png" />
+    </div>
+
+    <nav
+      class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50"
+    >
+      <img
+        src="./images/logo.png"
+        alt="Logo"
+        class="w-28 cursor-pointer mr-14"
+      />
+      <ul
+        class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50"
+      >
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">My Work</a></li>
+        <li><a href="#contact">Contact me</a></li>
+      </ul>
+
+      <div class="flex items-center gap-4">
+        <button>
+          <img src="./images/moon_icon.png" alt="moon icon" class="w-6" />
+        </button>
+
+        <a
+          href="#contact"
+          class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4"
+          >Contact <img src="./images/arrow-icon.png" alt="icon" class="w-3"
+        /></a>
+
+        <button>
+          <img src="./images/menu-black.png" class="w-6 block md:hidden ml-3" />
+        </button>
+      </div>
+      <!--------------- Mobile only menu --------------->
+      <div>
+        <ul
+          id="side-mneu"
+          class="flex md:hidden flex-col py-20 px-10 fixed gap-4 -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500"
+        >
+
+            <div class="absolute right-6 top-6 ">
+                <img class="w-5 cursor-pointer" src="./images/close-black.png">
+            </div>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">My Work</a></li>
+          <li><a href="#contact">Contact me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>
