@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./tailwind.config.js"></script>
   </head>
-  <body class="overflow-x-hidden">
+  <body class="overflow-x-hidden dark:bg-darkTheme">
     <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
       <img class="w-full" src="./images/header-bg-color.png" />
     </div>
@@ -114,7 +114,7 @@
           <div
             class="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(139,0,162,0.15)] flex items-center justify-center"
           >
-            <img class="w-full" src="./images/circular-text.png" />
+            <img class="w-full animate-spin_slow" src="./images/circular-text.png" />
             <img
               class="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
               src="./images/dev-icon.png"
@@ -130,9 +130,9 @@
             rerum tempore aperiam quis asperiores. Molestiae, error.
             Voluptatibus
           </p>
-          <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
+          <ul class="grid grid-cols-auto sm:grid-cols-auto gap-6 max-w-2xl">
             <li
-              class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"
+              class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black"
             >
               <img class="w-7 mt-3" src="./images/code-icon.png" alt="" />
               <h3 class="my-4 font-semibold text-gray-700">Languages</h3>
@@ -141,14 +141,14 @@
               </p>
             </li>
             <li
-              class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"
+              class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black"
             >
               <img class="w-7 mt-3" src="./images/edu-icon.png" alt="" />
               <h3 class="my-4 font-semibold text-gray-700">Education</h3>
               <p class="text-gray-600 text-sm">B.tech in Computer science</p>
             </li>
             <li
-              class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"
+              class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black"
             >
               <img class="w-7 mt-3" src="./images/project-icon.png" alt="" />
               <h3 class="my-4 font-semibold text-gray-700">Projects</h3>
@@ -160,27 +160,27 @@
           <h4 class="my-6 text-gray-700">Tools I use</h4>
           <ul class="flex items-center gap-3 sm:gap-5">
             <li
-              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[0_4px_0_#000]"
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-[0_4px_0_#000]"
             >
               <img class="w-5 sm:w-7" src="./images/vscode.png" />
             </li>
             <li
-              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[0_4px_0_#000]"
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-[0_4px_0_#000]"
             >
               <img class="w-5 sm:w-7" src="./images/firebase.png" />
             </li>
             <li
-              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[0_4px_0_#000]"
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-[0_4px_0_#000]"
             >
               <img class="w-5 sm:w-7" src="./images/mongodb.png" />
             </li>
             <li
-              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[0_4px_0_#000]"
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-[0_4px_0_#000]"
             >
               <img class="w-5 sm:w-7" src="./images/figma.png" />
             </li>
             <li
-              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[0_4px_0_#000]"
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-[0_4px_0_#000]"
             >
               <img class="w-5 sm:w-7" src="./images/git.png" />
             </li>
@@ -199,9 +199,9 @@
         quisquam iure deserunt similique quod, aut nam !
       </p>
 
-      <div class="grid grid-cols-4 gap-6 my-10">
+      <div class="grid grid-cols-auto gap-6 my-10">
         <div
-          class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:-translate-y-1 duration-500"
+          class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:-translate-y-1 duration-500"
         >
           <img class="w-10" src="./images/web-icon.png" />
           <h3 class="text-lg my-4 text-gray-700">Web Design</h3>
@@ -213,7 +213,7 @@
           /></a>
         </div>
         <div
-          class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:-translate-y-1 duration-500"
+          class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:-translate-y-1 duration-500"
         >
           <img class="w-10" src="./images/mobile-icon.png" />
           <h3 class="text-lg my-4 text-gray-700">Mobile</h3>
@@ -225,7 +225,7 @@
           /></a>
         </div>
         <div
-          class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:-translate-y-1 duration-500"
+          class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:-translate-y-1 duration-500"
         >
           <img class="w-10" src="./images/ui-icon.png" />
           <h3 class="text-lg my-4 text-gray-700">UI/UX Design</h3>
@@ -237,7 +237,7 @@
           /></a>
         </div>
         <div
-          class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:-translate-y-1 duration-500"
+          class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:-translate-y-1 duration-500"
         >
           <img class="w-10" src="./images/graphics-icon.png" />
           <h3 class="text-lg my-4 text-gray-700">Graphics Design</h3>
@@ -261,7 +261,7 @@
         quisquam iure deserunt similique quod, aut nam !
       </p>
 
-      <div class="grid grid-cols-4 gap-5 my-10">
+      <div class="grid grid-cols-auto gap-5 my-10">
         <div
           class="aspect-square bg-[url('./images/work-1.png')] bg-no-repeat bg-cover bg-center rounded-r-lg relative cursor-pointer group"
         >
@@ -337,7 +337,7 @@
         href="#"
         >Show more
         <img
-          class="w-4 hover:bg-[#fcf4ff] duration-500"
+          class="w-4 hover:bg-lightHover duration-500"
           src="./images/right-arrow-bold.png"
           alt=""
       /></a>
@@ -356,7 +356,7 @@
       </p>
 
       <form action="" class="max-w-2xl mx-auto">
-        <div class="grid grid-cols-2 gap-6 mt-10 mb-8">
+        <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
           <input
             class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
             type="text"
@@ -402,7 +402,6 @@
       </div>
     </div>
 
-    <!-- 1.57 -->
 
     <script src="./script.js"></script>
   </body>
