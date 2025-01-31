@@ -35,4 +35,4 @@
       <img width="100" height="100" src="facebook.svg" />
       <img width="100" height="100" src="bluesky.svg" />
     </div>
-    <img height="200" src="kousik.webp">
+    <img height="200" src="kousik_circle_web.webp">
